@@ -1,0 +1,6 @@
+name: Deploy Appwrite Functions
+
+on:
+  push:
+    branches:
+      - main
