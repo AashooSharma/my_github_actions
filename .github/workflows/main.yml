@@ -1,0 +1,19 @@
+name: Greet User
+
+on:
+  workflow_dispatch:
+    inputs:
+      name: 
+        description: 'Aashoo'
+        required: true
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Run Python script
+      run: python greeting.py ${{ github.event.inputs.name }}￼Enter
