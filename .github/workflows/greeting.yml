@@ -3,8 +3,8 @@ name: Greet User
 on:
   workflow_dispatch:
     inputs:
-      name:
-        description: 'Your name'
+      name: 'my abhi'
+        description: 'Aashoo'
         required: true
 
 jobs:
